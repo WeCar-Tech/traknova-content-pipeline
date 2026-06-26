@@ -1,0 +1,46 @@
+{
+  "icp_profile_name": "Taxi Company Owner",
+  "profile_purpose": "Inform article writing so that content resonates with taxi company owners and drives engagement and conversion.",
+  "who_they_are": "Independent taxi firm owners and operators in the UK managing between 5 and 50 vehicles. Often owner-operators who started as drivers. Juggling dispatch, drivers, compliance, and costs with a small or no back-office team.",
+  "what_they_care_about": [
+    "Keeping vehicles on the road and earning",
+    "Knowing where every vehicle is at all times",
+    "Reducing vehicle theft and unauthorised use",
+    "Protecting the business from driver disputes and false claims",
+    "Cutting costs without cutting corners on safety"
+  ],
+  "core_pains_to_address": [
+    "Drivers using vehicles outside agreed hours or areas",
+    "No footage when a passenger makes a complaint or claim",
+    "Fleet insurance premiums increasing year on year",
+    "Vehicles going missing or being used without authorisation",
+    "Managing driver behaviour across a fleet with no real visibility"
+  ],
+  "beliefs_to_align_with": [
+    "A well-monitored fleet is a well-run fleet",
+    "Technology that gives you visibility saves money in the long run",
+    "Driver accountability starts with having the evidence to back it up",
+    "Insurance companies respond to data, not just good faith"
+  ],
+  "objections_to_pre-empt": [
+    "My drivers will push back on being tracked",
+    "I've tried fleet tech before and it created more admin than it solved",
+    "Is this built for a small operation or only for large fleets?",
+    "What happens when something goes wrong — who do I call?"
+  ],
+  "language_and_tone": {
+    "use": [
+      "Operator-to-operator tone — practical and no-nonsense",
+      "References to real fleet pain points — driver disputes, insurance renewals, vehicle downtime",
+      "UK-specific context — local licensing, fleet insurance, private hire regulations",
+      "Outcomes over features — what changes day to day, not what the product does"
+    ],
+    "avoid": [
+      "Anything that sounds like it was written for a logistics multinational",
+      "Overly technical hardware descriptions",
+      "Vague efficiency language with no concrete meaning",
+      "Tone that talks down to small business owners"
+    ]
+  },
+  "conversion_goal": "Reader recognises the gap in their current setup, sees Traknova as a practical solution built for operations like theirs, and books a conversation or requests more information."
+}

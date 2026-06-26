@@ -1,0 +1,46 @@
+{
+  "icp_profile_name": "Car Rental Firm Owner",
+  "profile_purpose": "Inform article writing so that content resonates with independent car rental operators and drives engagement and conversion.",
+  "who_they_are": "Independent car rental business owners in the UK operating between 5 and 100 vehicles. Not franchise operations — privately run firms serving local markets, often alongside other automotive services. Asset-heavy businesses where every vehicle needs to earn its keep.",
+  "what_they_care_about": [
+    "Knowing exactly where every rental vehicle is at all times",
+    "Recovering vehicles quickly when a customer goes silent",
+    "Protecting assets from damage, theft, and misuse",
+    "Reducing insurance costs on a large vehicle portfolio",
+    "Having evidence when a customer disputes damage or an incident"
+  ],
+  "core_pains_to_address": [
+    "Customers driving outside agreed areas or taking vehicles abroad",
+    "Vehicles returned with damage and no clear evidence of when or how",
+    "Theft or abandonment with no way to locate the vehicle quickly",
+    "Insurance premiums that do not reflect the security measures in place",
+    "No real-time visibility across the fleet during peak periods"
+  ],
+  "beliefs_to_align_with": [
+    "Every vehicle is an asset — it needs to be protected like one",
+    "Real-time tracking is the difference between recovering a vehicle and writing it off",
+    "Evidence protects the business in customer disputes",
+    "Better security data should translate into better insurance terms"
+  ],
+  "objections_to_pre-empt": [
+    "Will customers be put off knowing vehicles are tracked?",
+    "How quickly can I actually locate a vehicle if something goes wrong?",
+    "Is the hardware reliable enough for vehicles that are constantly in use?",
+    "What is the total cost once installation and platform fees are included?"
+  ],
+  "language_and_tone": {
+    "use": [
+      "Asset protection framing — vehicles are investments, not just transport",
+      "Rental-specific scenarios — late returns, damage disputes, geographic boundaries",
+      "Concrete recovery and response examples",
+      "UK market context — insurance premiums, fleet financing, consumer rights"
+    ],
+    "avoid": [
+      "Driver behaviour framing — less relevant for rental than for managed fleets",
+      "Consumer tracking language — this is a B2B asset management conversation",
+      "Overpromising on customer reaction to tracking disclosure",
+      "Generic fleet management language that could apply to any industry"
+    ]
+  },
+  "conversion_goal": "Reader sees tracking and security as essential infrastructure for their business, not an optional add-on, and reaches out to understand what a Traknova setup would look like for their fleet size."
+}

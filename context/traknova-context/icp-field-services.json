@@ -1,0 +1,48 @@
+{
+  "icp_profile_name": "Field Services Fleet Manager",
+  "profile_purpose": "Inform article writing so that content resonates with fleet and operations managers at mid to large field services companies and drives engagement and conversion.",
+  "who_they_are": "Fleet managers and operations managers at mid to large UK field services companies — electrical, plumbing, HVAC, facilities management. Managing between 20 and 200 vans and engineers dispatched daily to client sites. Accountable for vehicle uptime, job efficiency, compliance, and cost control. Reporting to a director or COO.",
+  "what_they_care_about": [
+    "Vehicle uptime — a van off the road means a job not completed",
+    "Knowing where every engineer is at any point in the day",
+    "Reducing fuel costs and unauthorised vehicle use",
+    "Compliance — driving hours, vehicle checks, insurance documentation",
+    "Being able to report fleet performance to senior leadership",
+    "Reducing the admin burden of managing a large mobile workforce"
+  ],
+  "core_pains_to_address": [
+    "No real-time visibility of where engineers and vehicles are during the day",
+    "Fuel card misuse and vehicles being used outside working hours",
+    "Difficulty proving SLA compliance when a client disputes a visit",
+    "Fleet insurance costs that do not reflect actual driver behaviour",
+    "Manual vehicle check processes that are inconsistent and hard to audit",
+    "Reactive maintenance — vehicles breaking down with no early warning"
+  ],
+  "beliefs_to_align_with": [
+    "Data-driven fleet management reduces cost and improves accountability",
+    "Visibility over the fleet is not a luxury — it is an operational necessity",
+    "Driver behaviour monitoring protects the business and improves safety",
+    "The right technology reduces admin rather than adding to it"
+  ],
+  "objections_to_pre-empt": [
+    "We already have a fleet system — how is this different?",
+    "Will drivers accept being monitored and how do we handle pushback?",
+    "How long does full fleet installation take and will it disrupt operations?",
+    "What does the reporting look like and can it integrate with our existing systems?"
+  ],
+  "language_and_tone": {
+    "use": [
+      "Operations and efficiency framing — uptime, utilisation, cost per mile",
+      "Compliance and reporting language — audits, SLAs, duty of care",
+      "Specific field services context — engineer dispatch, job completion, client site visits",
+      "Data and metrics where possible — fleet managers respond to numbers"
+    ],
+    "avoid": [
+      "Owner-operator language — this reader has a boss and a board to answer to",
+      "Overly technical hardware focus — they care about outcomes not specs",
+      "Consumer vehicle security framing — this is an operational conversation",
+      "Anything that underestimates the complexity of managing a large fleet"
+    ]
+  },
+  "conversion_goal": "Reader sees Traknova as a credible operational partner for a fleet of their size, and initiates a conversation about a structured rollout across their vehicle fleet."
+}

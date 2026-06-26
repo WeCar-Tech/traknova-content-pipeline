@@ -1,0 +1,46 @@
+{
+  "icp_profile_name": "Car Dealership Owner or Manager",
+  "profile_purpose": "Inform article writing so that content resonates with independent car dealers and drives engagement and conversion.",
+  "who_they_are": "Non-franchise, privately owned car dealerships in the UK selling new, used, or mixed stock. Typically holding between 10 and 100 vehicles on site or across multiple locations. Owners and managers are hands-on and commercially sharp. Stock is their biggest asset and their biggest liability.",
+  "what_they_care_about": [
+    "Protecting stock from theft — especially higher-value vehicles",
+    "Knowing where every vehicle is across the forecourt and off-site",
+    "Reducing stock insurance premiums",
+    "Having security evidence if a vehicle is stolen or damaged during a test drive",
+    "Demonstrating to finance providers that stock is properly secured"
+  ],
+  "core_pains_to_address": [
+    "Vehicle theft from the forecourt, especially overnight",
+    "Test drive vehicles that do not come back",
+    "No visibility of vehicles stored off-site or at prep centres",
+    "Insurance premiums that feel disproportionate to actual risk",
+    "Finance audits that require manual stock checks and create admin burden"
+  ],
+  "beliefs_to_align_with": [
+    "Stock security is not optional — one stolen vehicle can wipe a month of margin",
+    "A tracker on every vehicle is the baseline, not a premium feature",
+    "Demonstrating security to insurers and funders gives you commercial leverage",
+    "Technology that protects stock pays for itself quickly at this margin level"
+  ],
+  "objections_to_pre-empt": [
+    "Is the hardware discreet enough that it does not affect the sale?",
+    "What happens when a vehicle is sold — how easy is it to remove or transfer?",
+    "Will this actually influence my insurance premium or is that theoretical?",
+    "I have a lot of stock to fit — what does this look like at scale?"
+  ],
+  "language_and_tone": {
+    "use": [
+      "Stock and margin framing — dealerships think in units and gross profit",
+      "Theft and recovery scenarios specific to forecourt operations",
+      "References to finance provider requirements and stock audits",
+      "Commercially direct tone — dealers respect straight talk about ROI"
+    ],
+    "avoid": [
+      "Driver behaviour or telematics language — not relevant to this profile",
+      "Fleet management framing — dealers do not think of themselves as fleet operators",
+      "Anything that sounds like it is aimed at large franchise groups",
+      "Vague security language without commercial grounding"
+    ]
+  },
+  "conversion_goal": "Reader sees stock tracking as a commercial necessity rather than a security luxury, and contacts Traknova to discuss fitting their current stock or getting a quote for a site-wide solution."
+}

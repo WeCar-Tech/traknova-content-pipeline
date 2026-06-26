@@ -1,0 +1,49 @@
+{
+  "icp_profile_name": "Logistics Fleet Manager",
+  "profile_purpose": "Inform article writing so that content resonates with fleet and operations managers at mid to large logistics and courier companies and drives engagement and conversion.",
+  "who_they_are": "Fleet managers, heads of logistics, and operations managers at mid to large UK courier, last-mile delivery, and haulage operations. Managing between 30 and 500 vehicles across depots or regions. Under constant pressure to hit delivery windows, control costs, and maintain compliance. Accountable to senior leadership for fleet KPIs.",
+  "what_they_care_about": [
+    "On-time delivery performance across the entire fleet",
+    "Real-time vehicle location and route adherence",
+    "Driver behaviour — speeding, harsh braking, idle time",
+    "Fuel efficiency across a high-mileage fleet",
+    "Vehicle security — cargo theft is a real and growing risk",
+    "Tachograph and driver hours compliance",
+    "Reducing accident rates and associated insurance costs"
+  ],
+  "core_pains_to_address": [
+    "Cargo theft — vehicles and loads targeted in transit or at rest stops",
+    "No real-time visibility when a driver goes off route or misses a window",
+    "High insurance premiums driven by fleet size and accident history",
+    "Driver hours violations creating compliance and legal exposure",
+    "Fuel costs that are difficult to control across a large dispersed fleet",
+    "Incidents with no footage — liability disputes with no evidence"
+  ],
+  "beliefs_to_align_with": [
+    "You cannot manage what you cannot see — real-time visibility is non-negotiable",
+    "Driver behaviour data is the fastest lever for reducing fuel and insurance costs",
+    "Cargo security is as important as vehicle security at this scale",
+    "Compliance is not optional — the cost of getting it wrong is too high"
+  ],
+  "objections_to_pre-empt": [
+    "We operate across multiple depots — can this scale and centralise reporting?",
+    "How does this integrate with our TMS or existing fleet management platform?",
+    "What is the ROI timeline on a fleet this size?",
+    "How quickly can incidents be flagged and acted on in real time?"
+  ],
+  "language_and_tone": {
+    "use": [
+      "Operational scale language — depots, routes, delivery windows, utilisation rates",
+      "Compliance framing — tachographs, driver hours, duty of care, DVSA",
+      "Cost reduction metrics — fuel per mile, accident frequency rate, insurance premium per vehicle",
+      "Cargo and asset security framing alongside vehicle security"
+    ],
+    "avoid": [
+      "Small fleet or owner-operator language — this reader manages scale",
+      "Generic tracking language that does not acknowledge logistics complexity",
+      "Anything that sounds like a consumer product",
+      "Overpromising on integration without understanding their existing stack"
+    ]
+  },
+  "conversion_goal": "Reader sees Traknova as capable of operating at their scale and complexity, and requests a demo or structured conversation about fleet-wide deployment."
+}

@@ -1,0 +1,43 @@
+{
+  "icp_profile_name": "PCO Operator",
+  "profile_purpose": "Inform article writing so that content resonates with PCO operators and drives engagement and conversion.",
+  "who_they_are": "Self-employed private hire drivers and small fleet owners in the UK, primarily London. Running 1-10 vehicles. Time-poor, phone-first, and highly practical.",
+  "what_they_care_about": [
+    "Protecting their vehicle — it is their livelihood",
+    "Reducing insurance costs",
+    "Having evidence when something goes wrong",
+    "Simple technology that works without babysitting",
+    "Advice from people who understand their world"
+  ],
+  "core_pains_to_address": [
+    "High insurance premiums they feel powerless to reduce",
+    "Relay theft targeting keyless PCO vehicles",
+    "No footage or evidence when disputes or false claims arise",
+    "Cheap security products that failed them before"
+  ],
+  "beliefs_to_align_with": [
+    "Proper security pays for itself over time",
+    "Evidence from a dash cam or tracker protects you in disputes",
+    "Technology should make running a small fleet simpler, not harder"
+  ],
+  "objections_to_pre-empt": [
+    "Is this just another tracker that will let me down?",
+    "Will this actually reduce my insurance or is that a sales claim?",
+    "Is it worth the upfront cost on already tight margins?"
+  ],
+  "language_and_tone": {
+    "use": [
+      "Plain, direct English",
+      "Peer-level tone — driver to driver, not brand to customer",
+      "Specific UK references — TfL, PCO licence, relay theft, keyless Toyotas",
+      "Concrete numbers and outcomes where possible"
+    ],
+    "avoid": [
+      "Corporate language",
+      "Overpromising on insurance savings",
+      "Technical hardware jargon",
+      "Anything that sounds like an ad"
+    ]
+  },
+  "conversion_goal": "Reader feels understood, sees Traknova as built for their world, and takes one next step — a consultation, a product page visit, or a direct enquiry."
+}
