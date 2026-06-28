@@ -50,7 +50,7 @@ Extract from Section 6 (Post Structure):
 - Opening hook — populate as the opening_hook field at the top level of the context object
 - H2 structure — each H2 becomes one section object in the sections array
 
-Use the H2s exactly as written. Do not rewrite, reorder, or add to them. Each H2 becomes a section with its heading populated and all other fields empty.
+Use the H2s exactly as written. Do not rewrite, reorder, or add to them.
 
 If the H2 structure is blank, flag sections as "MISSING — H2 structure not completed in brief" and do not proceed.
 
@@ -64,13 +64,11 @@ Extract the following and populate as a new seo_context field at the top level o
 - Section 10: meta_title_options and meta_description_options
 - Section 12: geo_aeo_checklist — extract as an array of checklist items, all marked incomplete
 
-This context travels with the article through every stage. The writing agent and QA agent will use it.
-
 ### 6. Additional instructions
 Extract from:
 - Section 8 (Statistics to Include) — specific statistics and sources to reference during research
 - Section 9 (Internal Links) — pages to link to in the final article
-- Section 13 (Notes) — standing writing rules. These are already encoded in the writing agent but flag any note that contradicts or adds to the standard pipeline rules.
+- Section 13 (Notes) — standing writing rules
 
 Populate these in an additional_instructions field at the top level of the context object.
 
@@ -79,22 +77,44 @@ Read Section 13 (Brief Sign-off). If any of the five checkboxes are not checked,
 brief_sign_off_complete: false
 brief_sign_off_notes: [list every unchecked item]
 
-Do not stop the pipeline for an incomplete sign-off — flag it and continue. The human reviewer will see it in the output.
+Do not stop the pipeline for an incomplete sign-off — flag it and continue.
 
 ## What you must build
-A completed context object following the structure in context/traknova-context/shared-context-schema.json with the following additional fields added at the top level:
-- headline: extracted from H1 in Section 6
-- opening_hook: extracted from Section 6
-- icp_supplementary_context: extracted from Section 3
-- seo_context: extracted from Sections 1, 2, 7, 8, 9, 10, and 12
-- additional_instructions: extracted from Sections 8, 9, and 13
-- brief_sign_off_complete: true or false
-- brief_sign_off_notes: array of unchecked items or empty array
+A completed context object with the following fields at the top level:
+- run_id
+- created_at
+- pipeline_stage
+- article_goal
+- traknova_pov
+- icp_profile
+- icp_supplementary_context
+- narrative_thread
+- headline
+- opening_hook
+- seo_context
+- additional_instructions
+- brief_sign_off_complete
+- brief_sign_off_notes
+- full_draft_so_far
+- qa_notes
+- run_log
 
-For each H2 in Section 6, create one section object with:
-- id populated as "section_1", "section_2" etc. in order
-- heading populated exactly as written in the brief
-- All other fields left empty for downstream agents to fill
+For each H2 in Section 6, create one section object in the sections array using EXACTLY these field names and no others:
+
+{
+  "id": "section_1",
+  "heading": "exact H2 text from brief",
+  "search_queries": {
+    "serper": [],
+    "apify": []
+  },
+  "research_findings": [],
+  "filtered_findings": [],
+  "key_points": [],
+  "draft": ""
+}
+
+Do not use any other field names. Do not use "research", "draft_content", "seo_notes", "editor_notes" or any variation. Use only these exact field names: id, heading, search_queries, research_findings, filtered_findings, key_points, draft.
 
 ## Rules
 - Do not add sections that are not in the brief
@@ -104,6 +124,8 @@ For each H2 in Section 6, create one section object with:
 - Set pipeline_stage to "research" before passing the context object forward
 - Generate a unique run_id in the format YYYY-MM-DD-XXX where XXX is a three digit number starting at 001
 - Populate created_at with the current date and time in ISO 8601 format
+- Set narrative_thread, full_draft_so_far, and qa_notes to empty strings
+- Set run_log to an empty array
 
 ## Output
 Return the completed context object as valid JSON and nothing else. No explanation, no preamble, no commentary. If any required field is missing, return the JSON with the missing field flagged as a string value starting with "MISSING —" followed by a clear description of what is needed.
