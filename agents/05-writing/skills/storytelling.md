@@ -18,6 +18,8 @@ Either a confirmation that the section passes all checks and is ready to finalis
 ### Check 1 — Specificity
 Read every sentence in the section. Flag any sentence that makes a claim without a concrete detail to support it.
 
+The em dash character is: —. Flag every single instance of this character without exception. Also flag -- used as a substitute for an em dash.
+
 A sentence fails this check if it:
 - Makes a general statement about a trend, problem, or outcome without a specific number, named situation, or real example
 - Could have been written without any research — it contains no information that required finding
