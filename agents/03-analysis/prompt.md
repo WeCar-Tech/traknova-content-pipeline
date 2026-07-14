@@ -39,11 +39,13 @@ Based on the scores from Step 2, assign each finding one of the following status
 - filter — finding is not relevant, conflicts with Traknova's POV, or is too low credibility to be useful. Do not include in filtered_findings.
 
 ### Step 4 — Populate filtered_findings
-Copy all findings with status "pass" or "pass_with_caution" into this section's filtered_findings array. Add the following fields to each finding:
+For every individual finding with status "pass" or "pass_with_caution", copy it into filtered_findings as its own separate entry — do not merge, combine, or group multiple findings together, even if they make a similar point or come from related sources. Each entry in filtered_findings must correspond to exactly one finding from research_findings, preserving its original fields (title, link, snippet, date, position) unchanged. Add only the following new fields to each:
 
 - filter_status: "pass" or "pass_with_caution"
 - filter_rationale: one or two sentences explaining why this finding was passed and how it is useful for this section
 - caution_note: if status is "pass_with_caution", explain specifically what to be cautious about. Otherwise leave as null.
+
+Do not invent a new "title" or "sources" field. Do not write a blended snippet drawing on more than one source. If two findings say similar things, they should appear as two separate filtered_findings entries, each retaining its own link and each individually scored — do not collapse them into one.
 
 ### Step 5 — Run gap check
 After populating filtered_findings, apply the identify-data-gaps skill to assess coverage_status, coverage_notes, and gap_description for this section, following that skill's definitions exactly.
