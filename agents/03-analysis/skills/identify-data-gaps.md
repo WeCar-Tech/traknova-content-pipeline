@@ -59,7 +59,7 @@ If coverage_status is "partial" or "insufficient", identify specifically what ty
 - Do not adjust coverage_status based on how important the section is — a short introductory section and a core argument section are assessed by the same criteria
 - Do not mark a section as sufficient simply because it has many findings — quantity does not equal coverage quality
 - A section with 1 strong finding (credibility 5, ICP relevance 5) and nothing else is "partial" not "sufficient" — one source is never sufficient regardless of quality
-- Log all sections with coverage_status "partial" or "insufficient" in run_log as "gap flagged — [section heading] — [gap_description]"
+-- If coverage_status is "partial" or "insufficient", this is captured directly via the section's own coverage_status and gap_description fields. Do not attempt to write to a shared run_log — this skill operates on a single section in isolation and has no visibility into other sections or a brief-wide log.
 - Do not trigger a research retry — gap flags are for the human reviewer to act on
 
 ---
