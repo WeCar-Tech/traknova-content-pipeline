@@ -51,15 +51,15 @@ Copy all findings with status "pass" or "pass_with_caution" into this section's 
 - caution_note: if status is "pass_with_caution", explain specifically what to be cautious about. Otherwise leave as null.
 
 ### Step 5 — Run gap check
-After populating filtered_findings, apply the identify-data-gaps skill to assess whether this section has sufficient coverage. If insufficient, set gap_flag to a string describing what is missing (e.g. "insufficient coverage — no data on X"). Otherwise, set gap_flag to null.
-Do not trigger a research retry from this agent. Gap flags are for the human reviewer to act on.
+After populating filtered_findings, apply the identify-data-gaps skill to assess coverage_status, coverage_notes, and gap_description for this section, following that skill's definitions exactly.
+Do not trigger a research retry from this agent. Sections with coverage_status "partial" or "insufficient" are for the human reviewer to act on.
 
 ## Rules
 - Do not rewrite, summarise, or editorially alter any finding — only score and classify
 - Do not pass findings that conflict with Traknova's POV unless the conflict is minor and a caution note is added
 - Do not filter findings solely because of low credibility score — a score 2 forum post may still be the best available evidence of operator sentiment
 - Do not add findings that were not in research_findings — you cannot create new material at this stage
-- Append a one-line summary to this section's analysis_summary field stating how many findings were passed, how many were filtered, and whether a gap flag was raised
+- - Include a one-line analysis_summary on this section stating how many findings were passed, how many were filtered, and the section's final coverage_status.
 
 ## Output
 Return the updated section object as valid JSON and nothing else — including its heading, search_queries, research_findings (unchanged), filtered_findings (newly populated), gap_flag, and analysis_summary. Do not wrap it in a parent object, and do not include other sections.
