@@ -32,11 +32,7 @@ For every finding in this section's research_findings array, apply the three ski
 Each finding must receive all three assessments before moving on.
 
 ### Step 3 — Make a pass or filter decision for each finding
-Based on the scores from Step 2, assign each finding one of the following statuses:
-
-- pass — finding is relevant, aligned, and useful. Include in filtered_findings.
-- pass_with_caution — finding is useful but has a conflict flag or low credibility score. Include in filtered_findings with a caution note.
-- filter — finding is not relevant, conflicts with Traknova's POV, or is too low credibility to be useful. Do not include in filtered_findings.
+Before moving to Step 4, make an explicit pass, pass_with_caution, or filter decision for every single finding in research_findings — not just the ones you intend to keep. Count them as you go.
 
 ### Step 4 — Populate filtered_findings
 For every individual finding with status "pass" or "pass_with_caution", copy it into filtered_findings as its own separate entry — do not merge, combine, or group multiple findings together, even if they make a similar point or come from related sources. Each entry in filtered_findings must correspond to exactly one finding from research_findings, preserving its original fields (title, link, snippet, date, position) unchanged. Add only the following new fields to each:
@@ -56,8 +52,7 @@ Do not trigger a research retry from this agent. Sections with coverage_status "
 - Do not pass findings that conflict with Traknova's POV unless the conflict is minor and a caution note is added
 - Do not filter findings solely because of low credibility score — a score 2 forum post may still be the best available evidence of operator sentiment
 - Do not add findings that were not in research_findings — you cannot create new material at this stage
-- - Include a one-line analysis_summary on this section stating how many findings were passed, how many were filtered, and the section's final coverage_status.
-
+- Include a one-line analysis_summary stating the total number of findings assessed, how many received "pass", how many "pass_with_caution", and how many "filter" — the three numbers must sum to the total findings assessed.
 ## Output
 Return the updated section object as valid JSON and nothing else — including its heading, search_queries, research_findings (unchanged), filtered_findings (newly populated), coverage_status, coverage_notes, gap_description, and analysis_summary. Do not wrap it in a parent object, and do not include other sections.
 
