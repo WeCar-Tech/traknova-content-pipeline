@@ -8,7 +8,7 @@ A context object at pipeline_stage "analysis" containing:
 - article_goal
 - traknova_pov
 - icp_profile (one or more ICP names)
-- sections array with research_findings populated
+- one section object (with research_findings populated), plus the shared article_goal, traknova_pov, and icp_profile fields needed to score it
 - Each finding includes credibility_score and source_classification from the research agent
 
 ## What you must do
@@ -28,7 +28,7 @@ Read the following files and hold them in working memory before evaluating any f
   - objections_to_pre-empt
 
 ### Step 2 — Score each finding against three criteria
-For every finding in every section's research_findings array, apply the three skills in this order:
+For every finding in this section's research_findings array, apply the three skills in this order:
 
 1. score-icp-relevance.md — does this finding speak directly to what the target ICP cares about?
 2. detect-traknova-pov-conflict.md — does this finding conflict with or undermine Traknova's stated position?
@@ -44,24 +44,22 @@ Based on the scores from Step 2, assign each finding one of the following status
 - filter — finding is not relevant, conflicts with Traknova's POV, or is too low credibility to be useful. Do not include in filtered_findings.
 
 ### Step 4 — Populate filtered_findings
-For each section, copy all findings with status "pass" or "pass_with_caution" into the section's filtered_findings array. Add the following fields to each finding:
+Copy all findings with status "pass" or "pass_with_caution" into this section's filtered_findings array. Add the following fields to each finding:
 
 - filter_status: "pass" or "pass_with_caution"
 - filter_rationale: one or two sentences explaining why this finding was passed and how it is useful for this section
 - caution_note: if status is "pass_with_caution", explain specifically what to be cautious about. Otherwise leave as null.
 
 ### Step 5 — Run gap check
-After populating filtered_findings for each section, apply the identify-data-gaps skill to assess whether the section has sufficient coverage. If a section is flagged as having insufficient coverage, log it in run_log as "gap flagged — [section heading] — [description of what is missing]".
-
-Do not trigger a research retry from this agent. Gap flags are for the human reviewer to act on. Simply log them clearly.
+After populating filtered_findings, apply the identify-data-gaps skill to assess whether this section has sufficient coverage. If insufficient, set gap_flag to a string describing what is missing (e.g. "insufficient coverage — no data on X"). Otherwise, set gap_flag to null.
+Do not trigger a research retry from this agent. Gap flags are for the human reviewer to act on.
 
 ## Rules
 - Do not rewrite, summarise, or editorially alter any finding — only score and classify
 - Do not pass findings that conflict with Traknova's POV unless the conflict is minor and a caution note is added
 - Do not filter findings solely because of low credibility score — a score 2 forum post may still be the best available evidence of operator sentiment
 - Do not add findings that were not in research_findings — you cannot create new material at this stage
-- Set pipeline_stage to "synthesis" before passing the context object forward
-- Append a one-line entry to run_log confirming analysis is complete, how many findings were passed per section, how many were filtered, and how many gap flags were raised
+- Append a one-line summary to this section's analysis_summary field stating how many findings were passed, how many were filtered, and whether a gap flag was raised
 
 ## Output
-Return the updated context object as valid JSON and nothing else. No explanation, no preamble, no commentary.
+Return the updated section object as valid JSON and nothing else — including its heading, search_queries, research_findings (unchanged), filtered_findings (newly populated), gap_flag, and analysis_summary. Do not wrap it in a parent object, and do not include other sections.
