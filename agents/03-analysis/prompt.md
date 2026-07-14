@@ -57,3 +57,5 @@ Do not trigger a research retry from this agent. Sections with coverage_status "
 Return the updated section object as valid JSON and nothing else — including its heading, search_queries, research_findings (unchanged), filtered_findings (newly populated), coverage_status, coverage_notes, gap_description, and analysis_summary. Do not wrap it in a parent object, and do not include other sections.
 
 No explanation, no preamble, no commentary. Your entire response must begin with the character { and end with the character }. Do not write a single word before or after the JSON object.
+
+When copying title, snippet, or any text field from research_findings into filtered_findings, ensure any double quotes within the text are properly escaped as \" so the resulting JSON remains valid. Do not let unescaped quotes break the JSON structure.
