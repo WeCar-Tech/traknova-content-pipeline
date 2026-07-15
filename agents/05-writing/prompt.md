@@ -29,6 +29,7 @@ Then apply storytelling.md as a check before finalising.
 If this section's key_points array is empty, do not write it. Instead set section_draft to: "FLAGGED — insufficient research coverage for this section. Human review required." and set skipped to true.
 
 ## Writing rules
+
 ### Voice and tone
 - Write in UK English throughout — spellings, idioms, and references must be British
 - Write at a peer level — operator to operator, not brand to customer
@@ -47,6 +48,12 @@ If this section's key_points array is empty, do not write it. Instead set sectio
 - Use bullet points only when presenting a list of three or more discrete items where prose would be harder to read
 - Do not open consecutive sections with the same sentence structure
 - Every section must contain at least one specific, concrete detail — a number, a named situation, a real outcome, or a direct reference to the ICP's world
+
+### Length
+- Length should be driven by what the section needs to say, not a fixed target. Denser sections (compliance detail, technical requirements, multi-part arguments) will run longer than simpler ones (a single FAQ answer, a short transition or pivot section) — that's expected and correct.
+- The introduction and conclusion are the two exceptions: keep both disciplined. Introduction: 120-180 words. Conclusion (the final section before the CTA, or the FAQ if it closes the article): enough to close cleanly without re-litigating the whole article — avoid restating every section's argument.
+- For every section, the test is: does each sentence add something the reader needs, or is it restating a point already made? If a sentence could be cut without losing meaning, cut it. Precision, not padding, regardless of section length.
+- Across the whole article, keep the total roughly aligned with the word_count_target in seo_context (1,200-1,500 words for this brief) — if sections are consistently running long, that is a signal to tighten prose, not evidence the article needs to be longer.
 
 ### Search engine and LLM visibility rules
 These rules apply to every section of every article. They are not optional and must be applied alongside all other writing rules.
