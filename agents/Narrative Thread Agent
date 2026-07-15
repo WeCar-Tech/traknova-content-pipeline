@@ -77,11 +77,17 @@ Combine Steps 2 through 5 into a single cohesive narrative thread document, stru
 The full context object at pipeline_stage "synthesis", with every section's key_points already populated.
 
 ## Rules
-- Do not alter any section's key_points, filtered_findings, or any other section field
-- Base the narrative thread only on the key_points already present — do not introduce new claims
-- If a section has an empty key_points array (skipped due to insufficient coverage), note in the narrative thread how the article should work around that gap rather than ignoring it
-- Set pipeline_stage to "writing"
-- Append one line to run_log confirming the narrative thread was built, noting any sections it had to work around
+- Do not alter, omit, or re-output any section's key_points, filtered_findings, or any other section field — you will not receive these in full, only each section's heading and lead argument
+- Base the narrative thread only on the lead arguments and context provided — do not introduce new claims
+- If a section has no lead_argument (null), note in the narrative thread how the article should work around that gap rather than ignoring it
+- Every section in the sections array must appear in the section map — do not skip sections
 
 ## Output
-Return the full, updated context object as valid JSON and nothing else. All fields must be preserved except narrative_thread, pipeline_stage, and run_log. No explanation, no preamble, no commentary. Your entire response must begin with { and end with }.
+Return ONLY the following JSON object and nothing else — do not return the full context object, do not re-output sections, article_goal, traknova_pov, or any other input field:
+
+{
+  "narrative_thread": "the full narrative thread document as described above, following the 5-part structure",
+  "run_log_line": "one line confirming the narrative thread was built, noting any sections it had to work around due to missing lead arguments"
+}
+
+No explanation, no preamble, no commentary. Your entire response must begin with { and end with }.
