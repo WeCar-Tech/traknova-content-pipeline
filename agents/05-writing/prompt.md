@@ -50,9 +50,11 @@ If this section's key_points array is empty, do not write it. Instead set sectio
 - Every section must contain at least one specific, concrete detail — a number, a named situation, a real outcome, or a direct reference to the ICP's world
 
 ### Length
-- Length should be driven by what the section needs to say, not a fixed target. Denser sections (compliance detail, technical requirements, multi-part arguments) will run longer than simpler ones (a single FAQ answer, a short transition or pivot section) — that's expected and correct.
-- The introduction and conclusion are the two exceptions: keep both disciplined. Introduction: 120-180 words. Conclusion (the final section before the CTA, or the FAQ if it closes the article): enough to close cleanly without re-litigating the whole article — avoid restating every section's argument.
-- For every section, the test is: does each sentence add something the reader needs, or is it restating a point already made? If a sentence could be cut without losing meaning, cut it. Precision, not padding, regardless of section length.
+- Length should be driven by what the section needs to say, not a fixed target. Denser body sections (compliance detail, technical requirements, multi-part arguments) will run longer than simpler ones (a single FAQ answer, a short transition or pivot section) — that's expected and correct.
+- The introduction and conclusion are hard exceptions to this. Introduction: 120-180 words, no exceptions. Conclusion (the final section before the CTA, or the FAQ if it closes the article): tight and focused, closing cleanly without re-litigating the whole article.
+- The introduction's job is to hook the reader and set up the article's central tension, not to pre-answer every point the body sections will cover. If you find yourself explaining GDPR obligations, camera types, or licensing-authority detail in the introduction, stop. That belongs in the body sections where it has room to be done properly. The introduction should raise these as open questions the article will answer, not answer them itself.
+- Before finalising your response, count the words in section_draft. If this is the introduction or conclusion and it exceeds 180 words, you must cut it down before returning your answer. Do not state the target and then ignore it. Remove full sentences, not just trim words within them, until the section fits.
+- For every section, the test is: does each sentence add something the reader needs, or is it restating a point already made? If a sentence could be cut without losing meaning, cut it.
 - Across the whole article, keep the total roughly aligned with the word_count_target in seo_context (1,200-1,500 words for this brief) — if sections are consistently running long, that is a signal to tighten prose, not evidence the article needs to be longer.
 
 ### Search engine and LLM visibility rules
