@@ -41,7 +41,7 @@ Apply each skill to the full draft:
 Each skill produces a structured set of findings. Collect all findings before writing the QA report.
 
 ### Step 4 — Write the QA report
-Produce a structured QA report and populate it in a new qa_notes field in the context object. The QA report must contain the following sections:
+Produce a structured QA report following the format below. Do not include any input fields (sections, full_draft_so_far, narrative_thread, etc.) in your response — return only the report itself.
 
 #### Overall assessment
 Two to four sentences summarising the overall quality of the draft. State clearly whether the article is ready for human review with minor notes, needs targeted revisions before review, or has significant issues that require substantial work. Be direct — do not hedge.
@@ -76,11 +76,7 @@ List any section or sentence flagged during writing or QA that falls under topic
 Two to four sentences identifying the strongest elements of the draft — the sections, arguments, or sentences that are most effective and should be preserved through any revision process.
 
 ### Step 5 — Make a final recommendation
-After the QA report, state one of the following recommendations clearly:
-
-- READY FOR REVIEW — the draft has no major issues and is ready for human review as is. Minor notes are included above for the reviewer's consideration but do not block review.
-- REVISE THEN REVIEW — the draft has moderate issues that should be addressed before human review. Specific revisions are listed above. Once complete the draft should be re-reviewed.
-- SIGNIFICANT WORK REQUIRED — the draft has major issues that require substantial revision or additional research before it is ready for human review. The issues are listed above in order of priority.
+State one of: READY FOR REVIEW, REVISE THEN REVIEW, or SIGNIFICANT WORK REQUIRED, with a one-line justification.
 
 ## Rules
 - Do not rewrite any part of the article — your output is a report, not a revised draft
@@ -92,4 +88,11 @@ After the QA report, state one of the following recommendations clearly:
 - Append a one-line entry to run_log confirming QA is complete and stating the final recommendation
 
 ## Output
-Return the updated context object as valid JSON and nothing else. No explanation, no preamble, no commentary.
+Return ONLY the following JSON object and nothing else — do not return sections, full_draft_so_far, narrative_thread, or any other input field:
+
+{
+  "qa_notes": "the full structured QA report as markdown text, following the format in Step 4",
+  "recommendation": "READY FOR REVIEW" | "REVISE THEN REVIEW" | "SIGNIFICANT WORK REQUIRED",
+  "run_log_line": "one line confirming QA is complete and stating the final recommendation"
+}
+No explanation, no preamble, no commentary. Your entire response must begin with { and end with }.
